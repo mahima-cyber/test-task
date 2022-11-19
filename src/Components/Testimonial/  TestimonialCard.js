@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { baseURL } from '../../Service/Config'
 import logo from '../../logo.svg';
+import  './TestimonialCardStyle.css'
 
 const TestimonialCard = () => {
   const [img, setImg] = useState([])
@@ -149,17 +150,17 @@ const TestimonialCard = () => {
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Form</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body" >
-              Img <input type="file" onChange={((e) => handleChange(e))} /><br />
-              Name <input type="text" value={state.Name} onChange={((e) => setState({ ...state, Name: e.target.value }))} /><br />
-              Description <input type="text" value={state.Description} onChange={((e) => setState({ ...state, Description: e.target.value }))} /><br />
-              Post <input type="text" value={state.Post} onChange={((e) => setState({ ...state, Post: e.target.value }))} /><br />
-              Active <input type="number" value={state.Active} onChange={((e) => setState({ ...state, Active: e.target.value }))} /><br />
+              Img :<input className='input' type="file" onChange={((e) => handleChange(e))} />
+              Name :<input className='input'  type="text" value={state.Name} onChange={((e) => setState({ ...state, Name: e.target.value }))} />
+              Description :<input type="text" className='input'  value={state.Description} onChange={((e) => setState({ ...state, Description: e.target.value }))} />
+              Post :<input type="text" className='input'  value={state.Post} onChange={((e) => setState({ ...state, Post: e.target.value }))} />
+              Active:<input type="number" className='input'  value={state.Active} onChange={((e) => setState({ ...state, Active: e.target.value }))} />
 
             </div>
             <div class="modal-footer">
