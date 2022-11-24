@@ -1,9 +1,11 @@
 .text-right{
     text-align: right;
+    margin-bottom: -53px;
+    margin-right: 77px;
 }
 .modal-body{
-    padding: 10px;
-    margin: 15ps;
+    padding: 50px;
+    text-align: left;
 }
 .input{
     width: 100%;
@@ -13,4 +15,18 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+.btn-primary{
+    margin: 5px;
+    width: 70px;
+}
+.ImageFix{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.ImageFix input{
+    opacity: 0;
+    position: absolute;
 }

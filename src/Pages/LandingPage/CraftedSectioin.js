@@ -1,4 +1,5 @@
 import React from 'react'
+import Servise from '../../assets/images/services.png'
 
 const CraftedSectioin = () => {
 
@@ -67,7 +68,7 @@ const CraftedSectioin = () => {
                 </div>
                 <div className="services-image d-lg-flex align-items-center">
                     <div className="image">
-                        <img src="assets/images/services.png" alt="Services" />
+                        <img src={Servise} alt="Services" />
                     </div>
                 </div>
             </section>

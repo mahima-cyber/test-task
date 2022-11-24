@@ -1,4 +1,5 @@
 import React from 'react'
+import CallToAction from '../../assets/images/call-to-action.png'
 
 const LearnMoreSection = () => {
 
@@ -6,7 +7,7 @@ const LearnMoreSection = () => {
     <div>
       <section id="call-to-action" className="call-to-action">
         <div className="call-action-image">
-          <img src="assets/images/call-to-action.png" alt="call-to-action" />
+          <img src={CallToAction} alt="call-to-action" />
         </div>
         <div className="container-fluid">
           <div className="row justify-content-end">

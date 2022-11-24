@@ -1,21 +1,13 @@
 import './App.css';
 import LayoutIndex from './Components/Layout/ index';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import TestimonialCard from './Components/Testimonial/  TestimonialCard';
+import { Route, Routes } from "react-router-dom";
+import TestimonialForm from './Components/Testimonial/TestimonialForm';
+import { IndexRoute } from './Routes';
+
 function App() {
   return (
     <div className="App">
-
-      <Router>
-        <Routes>
-
-          <Route path="/" element={<LayoutIndex />} />
-          <Route path="/testimonialCard" element={<TestimonialCard />} />
-
-
-        </Routes>
-      </Router>
-
+      <IndexRoute/>
     </div>
   );
 }
